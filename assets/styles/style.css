@@ -35,6 +35,7 @@ body {
 
 .logo {
     grid-area: logo;
+    align-self: center;
 }
 
 .menu_1 {
@@ -83,11 +84,8 @@ body {
 nav {
     font-size: 40px;
     line-height: 22px;
-
-
     display: grid;
     grid-area: nav;
-
     grid-template-columns:
         25% 25% 25% 25%;
     grid-template-areas:
