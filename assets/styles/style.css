@@ -23,6 +23,7 @@ body {
         " aside main main main"
         "footer footer footer footer";
 
+
 }
 
 .header {
@@ -31,6 +32,8 @@ body {
     grid-template-areas:
         "logo nav";
     grid-area: header;
+
+
 }
 
 .logo {
