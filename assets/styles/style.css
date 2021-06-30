@@ -41,27 +41,29 @@ body {
     grid-area: menu_1;
     color: #FFFFFF;
     align-self: center;
+    text-decoration: none;
 }
 
 .menu_2 {
     grid-area: menu_2;
     color: #FFFFFF;
     align-self: center;
+    text-decoration: none;
 }
 
 .menu_3 {
     grid-area: menu_3;
     color: #FFFFFF;
     align-self: center;
+    text-decoration: none;
 }
 
 .menu_4 {
     grid-area: menu_4;
     color: #FFFFFF;
     align-self: center;
+    text-decoration: none;
 }
-
-
 
 .main {
     border: 1px solid rgb(173, 35, 236);
