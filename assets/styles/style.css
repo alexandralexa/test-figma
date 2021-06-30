@@ -15,15 +15,50 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image:
-        url(../images/HG.svg),
-        url(../images/VG.svg),
-        url(../images/MG.svg);
+    display: grid;
+    background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
+    grid-template-rows: 10% 1fr 10%;
+    grid-template-areas:
+        " header header header header"
+        " aside main main main"
+        "footer footer footer footer";
 
-    background-repeat: no-repeat;
-
-    background-size: 50% auto;
 }
 
-.container {
+.header {
+
+
+    border: 1px solid red;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo text text_4";
+    grid-area: header;
+
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.text {
+    grid-area: text;
+}
+
+.text_4 {
+    grid-area: text_4;
+}
+
+.main {
+    border: 1px solid rgb(173, 35, 236);
+    grid-area: main;
+}
+
+.aside {
+    border: 1px solid navy;
+    grid-area: aside;
+}
+
+.footer {
+    border: solid orange 1px;
+    grid-area: footer;
+}
