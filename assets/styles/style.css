@@ -22,11 +22,19 @@ body {
         " header header header header"
         " aside main main main"
         "footer footer footer footer";
-}
-
-.container {
     background-image:
         url(../images/HG.svg);
+    background-size: cover;
+}
+
+.mount {
+    position: fixed;
+    top: 200px;
+    width: 100%;
+    z-index: -1;
+    height: 1000px;
+    background-image:
+        url(../images/MG.svg);
     background-size: cover;
 }
 
