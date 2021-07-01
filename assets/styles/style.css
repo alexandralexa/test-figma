@@ -20,7 +20,7 @@ body {
     grid-template-rows: 10% 1fr 10%;
     grid-template-areas:
         " header header header header"
-        " aside main main main"
+        " main main main main"
         "footer footer footer footer";
     background-image:
         url(../images/HG.svg);
@@ -32,7 +32,7 @@ body {
     top: 200px;
     width: 100%;
     z-index: -1;
-    height: 1000px;
+    height: 2000px;
     background-image:
         url(../images/MG.svg);
     background-size: cover;
@@ -84,6 +84,20 @@ body {
 .main {
     border: 1px solid rgb(173, 35, 236);
     grid-area: main;
+
+}
+
+.land {
+    margin-top: 500px;
+    height: 1500px;
+    background-image:
+        url(../images/VG.svg);
+    background-size: cover;
+}
+
+.rest {
+    height: 10000px;
+    background: #0B1D26;
 }
 
 .aside {
