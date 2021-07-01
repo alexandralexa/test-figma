@@ -36,6 +36,8 @@ body {
     background-image:
         url(../images/MG.svg);
     background-size: cover;
+    display: grid;
+
 }
 
 .header {
