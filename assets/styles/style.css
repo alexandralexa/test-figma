@@ -48,9 +48,23 @@ body {
 
 }
 
+h1 {
+    font-family: Chronicle Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 88px;
+    line-height: 100px;
+    color: #FFFFFF;
+    grid-area: h1;
+    text-align: center;
+}
+
 .logo {
     grid-area: logo;
     align-self: center;
+    width: 108px;
+    height: 24px;
+
 }
 
 .menu_1 {
@@ -85,7 +99,9 @@ body {
     border: 1px solid rgb(173, 35, 236);
     grid-area: main;
 
+
 }
+
 
 .land {
     margin-top: 500px;
@@ -93,16 +109,23 @@ body {
     background-image:
         url(../images/VG.svg);
     background-size: cover;
+
 }
 
 .rest {
     height: 10000px;
-    background: #0B1D26;
+    background:
+        linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+
 }
 
 .aside {
     border: 1px solid navy;
     grid-area: aside;
+}
+
+.wrapper {
+    grid-area: wrapper;
 }
 
 .footer {
