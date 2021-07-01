@@ -22,8 +22,12 @@ body {
         " header header header header"
         " aside main main main"
         "footer footer footer footer";
+}
 
-
+.container {
+    background-image:
+        url(../images/HG.svg);
+    background-size: cover;
 }
 
 .header {
