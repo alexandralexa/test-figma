@@ -1,15 +1,4 @@
-@font-face {
-    font-family: 'Chronicle Display';
-    src:
-        url(../fonts/Chronicle/Display/ Black.woff);
-    src: url(../fonts/Chronicle/ Display/ Light/ Italic.woff);
-    src: url(../fonts/Chronicle/ Display/Roman.woff);
-    src: url(../fonts/chronicle-display-cufonfonts-webfont.zip);
-    src: url(../fonts/Chronicle/ Display/ Semibold.woff);
-    src: url(../fonts/style.css);
-    font-weight: normal;
-    font-style: normal;
-}
+@import "../fonts/style.css"
 
 *::before,
 *::after {
@@ -70,17 +59,15 @@ body {
 }
 
 h1 {
-    font-family: 'Chronicle Display';
+    font-family:
+        'Chronicle Display Roman';
     font-style: normal;
-    font-weight: 600px;
-    font-size: 200px;
-    line-height: 200px;
     color: #FFFFFF;
     grid-area: h1;
     text-align: center;
-    height: 100%;
-    width: 100%;
+    font-size: 10em;
 }
+
 
 .logo {
     grid-area: logo;
