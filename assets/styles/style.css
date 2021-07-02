@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Chronicle Display';
     src:
-        url(../fonts/Chronicle\ Display\ Black.woff);
-    src: url(../fonts/Chronicle\ Display\ Light\ Italic.woff);
-    src: url(../fonts/Chronicle\ Display\ Roman.woff);
+        url(../fonts/Chronicle/Display/ Black.woff);
+    src: url(../fonts/Chronicle/ Display/ Light/ Italic.woff);
+    src: url(../fonts/Chronicle/ Display/Roman.woff);
     src: url(../fonts/chronicle-display-cufonfonts-webfont.zip);
-    src: url(../fonts/Chronicle\ Display\ Semibold.woff);
+    src: url(../fonts/Chronicle/ Display/ Semibold.woff);
     src: url(../fonts/style.css);
     font-weight: normal;
     font-style: normal;
@@ -32,8 +32,9 @@ body {
     display: grid;
     background:
         linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
-    grid-template-rows: 10% 1fr 10%;
-    grid-template-areas: " header header header header"
+    grid-template-rows: 10% 1fr 20%;
+    grid-template-areas:
+        " header header header header"
         " main main main main"
         "footer footer footer footer";
     background-image: url(../images/HG.svg);
@@ -56,7 +57,6 @@ body {
 
 .content {
     grid-area: content;
-    border: 1px solid rgb(128, 240, 178);
     display: grid;
     grid-template-rows: 1fr;
     grid-template-areas: "h1";
@@ -67,23 +67,17 @@ body {
     grid-template-columns: 10% 1fr;
     grid-template-areas: "logo nav";
     grid-area: header;
-    border: 1px solid white;
-
-
 }
 
 h1 {
     font-family: 'Chronicle Display';
-
     font-style: normal;
     font-weight: 600px;
-    font-size: 100px;
+    font-size: 200px;
     line-height: 200px;
     color: #FFFFFF;
     grid-area: h1;
     text-align: center;
-
-
     height: 100%;
     width: 100%;
 }
@@ -125,10 +119,7 @@ h1 {
 }
 
 .main {
-    border: 1px solid rgb(173, 35, 236);
     grid-area: main;
-
-
 }
 
 
@@ -137,7 +128,6 @@ h1 {
     height: 1500px;
     background-image: url(../images/VG.svg);
     background-size: cover;
-
 }
 
 .rest {
@@ -150,44 +140,38 @@ h1 {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-        "social_1 social_1 social_1"
-        "social_2  social_2 social_2";
+        "social_1 social_1 social_1 social_1"
+        "social_2 social_2 social_2 social_2";
 
-
+    justify-items: stretch;
 }
 
 .social_1 {
     grid-area: social_1;
-    border: 1px solid khaki;
     height: 2vh;
-    justify-content: stretch;
-
-
-
-
-
+    width: 1fr;
 }
 
 .social_2 {
     grid-area: social_2;
-    border: 1px solid green;
     height: 2vh;
+    width: 1fr;
 
 }
 
 .aside {
-    border: 1px solid navy;
     grid-area: aside;
 }
 
 .wrapper {
     grid-area: wrapper;
-    border: 1px darkorchid;
+    text-align: center;
 }
 
 .footer {
-    border: solid orange 1px;
+    border: 1px solid orange;
     grid-area: footer;
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
 }
 
 nav {
