@@ -1,5 +1,7 @@
-@import "../fonts/style.css"
+@import "../fonts/style.css";
 
+
+*,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -59,13 +61,12 @@ body {
 }
 
 h1 {
-    font-family:
-        'Chronicle Display Roman';
+    font-family: 'Chronicle Display Roman ';
     font-style: normal;
     color: #FFFFFF;
     grid-area: h1;
     text-align: center;
-    font-size: 10em;
+    font-size: 20em;
 }
 
 
@@ -136,13 +137,13 @@ h1 {
 .social_1 {
     grid-area: social_1;
     height: 2vh;
-    width: 1fr;
+    width: 1vw;
 }
 
 .social_2 {
     grid-area: social_2;
     height: 2vh;
-    width: 1fr;
+    width: 1vw;
 
 }
 
