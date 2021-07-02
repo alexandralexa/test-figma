@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'Chronicle Display';
+    src:
+        url(../fonts/Chronicle\ Display\ Black.woff);
+    src: url(../fonts/Chronicle\ Display\ Light\ Italic.woff);
+    src: url(../fonts/Chronicle\ Display\ Roman.woff);
+    src: url(../fonts/chronicle-display-cufonfonts-webfont.zip);
+    src: url(../fonts/Chronicle\ Display\ Semibold.woff);
+    src: url(../fonts/style.css);
+    font-weight: normal;
+    font-style: normal;
+}
+
 *::before,
 *::after {
     box-sizing: border-box;
@@ -9,6 +22,7 @@ html {
     padding: 0;
 }
 
+
 body {
     display: grid;
     min-height: 100%;
@@ -16,49 +30,62 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
+    background:
+        linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
     grid-template-rows: 10% 1fr 10%;
-    grid-template-areas:
-        " header header header header"
+    grid-template-areas: " header header header header"
         " main main main main"
         "footer footer footer footer";
-    background-image:
-        url(../images/HG.svg);
+    background-image: url(../images/HG.svg);
     background-size: cover;
 }
 
 .mount {
     position: fixed;
-    top: 200px;
+    top: 240px;
     width: 100%;
     z-index: -1;
     height: 2000px;
-    background-image:
-        url(../images/MG.svg);
+    background-image: url(../images/MG.svg);
     background-size: cover;
     display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-areas: "aside content wrapper";
 
+}
+
+.content {
+    grid-area: content;
+    border: 1px solid rgb(128, 240, 178);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas: "h1";
 }
 
 .header {
     display: grid;
     grid-template-columns: 10% 1fr;
-    grid-template-areas:
-        "logo nav";
+    grid-template-areas: "logo nav";
     grid-area: header;
+    border: 1px solid white;
 
 
 }
 
 h1 {
-    font-family: Chronicle Display;
+    font-family: 'Chronicle Display';
+
     font-style: normal;
-    font-weight: 600;
-    font-size: 88px;
-    line-height: 100px;
+    font-weight: 600px;
+    font-size: 100px;
+    line-height: 200px;
     color: #FFFFFF;
     grid-area: h1;
     text-align: center;
+
+
+    height: 100%;
+    width: 100%;
 }
 
 .logo {
@@ -108,16 +135,43 @@ h1 {
 .land {
     margin-top: 500px;
     height: 1500px;
-    background-image:
-        url(../images/VG.svg);
+    background-image: url(../images/VG.svg);
     background-size: cover;
 
 }
 
 .rest {
     height: 10000px;
-    background:
-        linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+
+}
+
+.scl {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "social_1 social_1 social_1"
+        "social_2  social_2 social_2";
+
+
+}
+
+.social_1 {
+    grid-area: social_1;
+    border: 1px solid khaki;
+    height: 2vh;
+    justify-content: stretch;
+
+
+
+
+
+}
+
+.social_2 {
+    grid-area: social_2;
+    border: 1px solid green;
+    height: 2vh;
 
 }
 
@@ -128,6 +182,7 @@ h1 {
 
 .wrapper {
     grid-area: wrapper;
+    border: 1px darkorchid;
 }
 
 .footer {
@@ -140,9 +195,7 @@ nav {
     line-height: 22px;
     display: grid;
     grid-area: nav;
-    grid-template-columns:
-        25% 25% 25% 25%;
-    grid-template-areas:
-        "menu_1 menu_2 menu_3 menu_4";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: "menu_1 menu_2 menu_3 menu_4";
     text-align: center;
 }
