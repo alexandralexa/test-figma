@@ -1,5 +1,7 @@
 @import "../fonts/style.css";
 
+@import"../__MACOSX/Gilroy-FREE/.css";
+
 
 *,
 *::before,
@@ -60,13 +62,13 @@ body {
     grid-area: header;
 }
 
-h1 {
+.text {
     font-family: 'Chronicle Display Roman ';
     font-style: normal;
     color: #FFFFFF;
     grid-area: h1;
     text-align: center;
-    font-size: 20em;
+    font-size: 15em;
 }
 
 
@@ -162,7 +164,7 @@ h1 {
     background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
 }
 
-nav {
+.nav {
     font-size: 40px;
     line-height: 22px;
     display: grid;
@@ -170,4 +172,6 @@ nav {
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas: "menu_1 menu_2 menu_3 menu_4";
     text-align: center;
+    font-family: 'Giroy-Light';
+    font-size: 3em;
 }
