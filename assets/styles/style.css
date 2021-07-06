@@ -75,9 +75,17 @@ html {
 .logo {
     grid-area: logo;
     align-self: center;
-    width: 108px;
-    height: 24px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: grid;
+}
 
+.l_go {
+    width: 100%;
+    height: 18%;
+    align-self: center;
+    justify-self: flex-start;
 }
 
 .menu_1 {
@@ -106,6 +114,7 @@ html {
     color: #FFFFFF;
     align-self: center;
     text-decoration: none;
+    justify-self: center;
 }
 
 .main {
@@ -125,34 +134,58 @@ html {
     background-color: #0c5d0c;
     background-image: linear-gradient(162deg, #0c5d0c 0%, #b5b54b 100%);
 
+}
 
+.pictCont {
+    width: 50%;
+    display: grid;
+    align-items: center;
+}
 
+.pct {
+    width: 50%;
+    max-width: 50%;
+    justify-content: left;
 }
 
 .scl {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-        "social_1 social_1 social_1 social_1"
-        "social_2 social_2 social_2 social_2";
+        "scl_1 scl_1 scl_1 scl_1"
+        "scl_2 scl_2 scl_2 scl_2";
 
     justify-items: center;
     align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 60%;
+    padding: 20px;
+}
+
+.scl_1 {
+    grid-area: scl_1;
+    width: 100%;
+    height: 100%;
+}
+
+.scl_2 {
+    grid-area: scl_2;
+    width: 100%;
+    height: 100%;
 }
 
 .social_1 {
     grid-area: social_1;
-    height: 9vh;
-    width: 4vw;
-    align-items: stretch;
+    width: 100%;
+    height: 15%;
+
 }
 
 .social_2 {
     grid-area: social_2;
-    height: 9vh;
-    width: 4vw;
-    align-items: stretch;
-
+    height: 15%;
+    width: 100%;
 }
 
 .aside {
@@ -162,6 +195,10 @@ html {
 .wrapper {
     grid-area: wrapper;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    justify-items: center;
 }
 
 .footer {
@@ -171,7 +208,7 @@ html {
 }
 
 .nav {
-    font-size: 40px;
+    font-size: 40em;
     line-height: 22px;
     display: grid;
     grid-area: nav;
@@ -180,4 +217,5 @@ html {
     text-align: center;
     font-family: 'Giroy-Light';
     font-size: 3em;
+    width: 95vw;
 }
